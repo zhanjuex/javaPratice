@@ -17,6 +17,7 @@ public class LazyManDCL {
          */
 
         // 双重检查锁
+        // 第一个判断防止线程空等，提高cpu利用率
         if (lazyManDCL == null) {
             synchronized(LazyManDCL.class) {
                 if (lazyManDCL == null)
