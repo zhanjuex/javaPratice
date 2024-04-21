@@ -81,7 +81,8 @@ class Test implements A, B{
         final String s = new String("123");
 
 
-
+        // 浅拷贝实现
+        // AbstractTest b = Object.clone(a);
 
     }
 }
